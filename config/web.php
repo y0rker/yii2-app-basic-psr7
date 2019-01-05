@@ -13,8 +13,13 @@ $config = [
     ],
     'components' => [
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'class' => \yii\Psr7\web\Request::class,
+            'enableCookieValidation' => false,
+            'enableCsrfValidation' => false,
+            'enableCsrfCookie' => false,
+        ],
+        'response' => [
+            'class' => \yii\Psr7\web\Response::class,
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
