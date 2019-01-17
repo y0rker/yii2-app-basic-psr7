@@ -1,23 +1,13 @@
 version: "3.6"
 services:
-  nginx:
-    image: registry.pkiapps.com/punchkick/nginx:mainline
-    ports:
-      - "8080:80"
-    links:
-      - php:php
-    volumes:
-      - ${PWD-.}:/var/www
-      - ${PWD-.}/config/.docker/nginx/nginx.conf:/etc/nginx/conf/nginx.conf:ro
-    networks:
-      main:
-        aliases:
-          - nginx
   php:
-    image: registry.pkiapps.com/punchkick/php:7.2-alpine
+    image: charlesportwoodii/php:7.2
     working_dir: /var/www
+    ports:
+      - "8080:8080"
     volumes:
       - ${PWD-.}:/var/www
+    entrypoint: bash -lc "/var/www/rr serve -d -v -c ./rr.yaml"
     networks:
       main:
         aliases:

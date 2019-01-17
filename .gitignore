@@ -1,4 +1,6 @@
-web/assets
+rr
+assets/*
+web/assets/*
 # phpstorm project files
 .idea
 

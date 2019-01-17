@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1a7e8c5dc58e8d100c6b3c75ed71870",
+    "content-hash": "a526f0c0714587926be2e9f2d34508bb",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -170,16 +170,22 @@
         {
             "name": "charlesportwoodii/yii2-psr7-bridge",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/charlesportwoodii/yii2-psr7-bridge.git",
+                "reference": "d38426733c113759fa5460b87846981afbd45466"
+            },
             "dist": {
-                "type": "path",
-                "url": "../yii2-psr7-bridge",
-                "reference": "f6138e42cac970862b0024625651b0b14c0a7cdd",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/charlesportwoodii/yii2-psr7-bridge/zipball/d38426733c113759fa5460b87846981afbd45466",
+                "reference": "d38426733c113759fa5460b87846981afbd45466",
+                "shasum": ""
             },
             "require": {
                 "psr/http-message": "^1.0",
+                "psr/http-server-handler": "^1.0",
                 "yiisoft/yii2": "^2.0.15",
-                "zendframework/zend-diactoros": "^1.8"
+                "zendframework/zend-diactoros": "^2.0"
             },
             "require-dev": {
                 "monolog/monolog": "^1.24",
@@ -194,11 +200,7 @@
                     "yii\\Psr7\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "yii\\Psr7\\tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -208,7 +210,52 @@
                     "email": "charlesportwoodii@erianna.com"
                 }
             ],
-            "description": "A PSR7 Bridge for Yii2"
+            "description": "A PSR7 Bridge for Yii2",
+            "time": "2019-01-17T22:22:10+00:00"
+        },
+        {
+            "name": "codedungeon/php-cli-colors",
+            "version": "1.10.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikeerickson/php-cli-colors.git",
+                "reference": "5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikeerickson/php-cli-colors/zipball/5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b",
+                "reference": "5649ef76ec0c9ed626e95bf40fdfaf4b8efcf79b",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codedungeon\\PHPCliColors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Erickson",
+                    "email": "codedungeon@gmail.com"
+                }
+            ],
+            "description": "PHP Package for using color output in CLI commands",
+            "homepage": "https://github.com/mikeerickson/php-cli-colors",
+            "keywords": [
+                "color",
+                "colors",
+                "composer",
+                "package",
+                "php"
+            ],
+            "time": "2018-05-17T01:34:14+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -256,56 +303,6 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
-        },
-        {
-            "name": "http-interop/http-factory-diactoros",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/http-interop/http-factory-diactoros.git",
-                "reference": "7d19904a7e1047d316211e4453a30f5bdd504294"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/http-interop/http-factory-diactoros/zipball/7d19904a7e1047d316211e4453a30f5bdd504294",
-                "reference": "7d19904a7e1047d316211e4453a30f5bdd504294",
-                "shasum": ""
-            },
-            "require": {
-                "psr/http-factory": "^1.0",
-                "zendframework/zend-diactoros": "^1.3"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "^1.0"
-            },
-            "require-dev": {
-                "http-interop/http-factory-tests": "^0.5",
-                "phpunit/phpunit": "^6.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Http\\Factory\\Diactoros\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "An HTTP Factory using Zend Diactoros",
-            "keywords": [
-                "factory",
-                "http",
-                "psr-17",
-                "psr-7"
-            ],
-            "time": "2018-07-31T19:31:26+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -410,6 +407,147 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
+            "name": "psr/http-server-handler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "time": "2018-10-30T16:46:14+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "c4421fcac1edd5a324fda73e589a5cf96e52ffd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/c4421fcac1edd5a324fda73e589a5cf96e52ffd0",
+                "reference": "c4421fcac1edd5a324fda73e589a5cf96e52ffd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2018-11-21T13:42:00+00:00"
+        },
+        {
+            "name": "spiral/dumper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/dumper.git",
+                "reference": "ade15ea03691add0bf20dea037fe2e4a03ee3f16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/dumper/zipball/ade15ea03691add0bf20dea037fe2e4a03ee3f16",
+                "reference": "ade15ea03691add0bf20dea037fe2e4a03ee3f16",
+                "shasum": ""
+            },
+            "require": {
+                "codedungeon/php-cli-colors": "~1.0",
+                "php": "^7.1",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Debug\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wolfy-J",
+                    "email": "wolfy.jd@gmail.com"
+                }
+            ],
+            "description": "Colorful variable dumper",
+            "time": "2018-12-08T15:56:36+00:00"
+        },
+        {
             "name": "spiral/goridge",
             "version": "v2.1.3",
             "source": {
@@ -450,25 +588,29 @@
         },
         {
             "name": "spiral/roadrunner",
-            "version": "v1.2.8",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/roadrunner.git",
-                "reference": "4258f54f5b1ef25a692644d2bd58256092b7c23f"
+                "reference": "6f81ce6cd30f86455d6ab0dfb52915a52683a2e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/roadrunner/zipball/4258f54f5b1ef25a692644d2bd58256092b7c23f",
-                "reference": "4258f54f5b1ef25a692644d2bd58256092b7c23f",
+                "url": "https://api.github.com/repos/spiral/roadrunner/zipball/6f81ce6cd30f86455d6ab0dfb52915a52683a2e9",
+                "reference": "6f81ce6cd30f86455d6ab0dfb52915a52683a2e9",
                 "shasum": ""
             },
             "require": {
-                "http-interop/http-factory-diactoros": "^1.0",
+                "ext-json": "*",
                 "php": "^7.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
-                "spiral/goridge": "^2.0"
+                "spiral/goridge": "^2.0",
+                "zendframework/zend-diactoros": "^1.3|^2.0"
             },
+            "bin": [
+                "qbuild/rr-build"
+            ],
             "type": "server",
             "autoload": {
                 "psr-4": {
@@ -486,7 +628,7 @@
                 }
             ],
             "description": "High-performance PHP load balancer and process manager library for Golang",
-            "time": "2018-12-26T12:11:55+00:00"
+            "time": "2019-01-17T10:06:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -548,12 +690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "25496d05de5a9509d890417cfe650e65bc5e5e0e"
+                "reference": "c20f77f94d70a6b43d8699139eb8940257d5c93e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/25496d05de5a9509d890417cfe650e65bc5e5e0e",
-                "reference": "25496d05de5a9509d890417cfe650e65bc5e5e0e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c20f77f94d70a6b43d8699139eb8940257d5c93e",
+                "reference": "c20f77f94d70a6b43d8699139eb8940257d5c93e",
                 "shasum": ""
             },
             "require": {
@@ -640,7 +782,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-03T22:36:16+00:00"
+            "time": "2019-01-15T10:42:13+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -808,35 +950,40 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "dev-release-1.8",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "1dc4959014d3e7304bd87c58bcf96cf3fc63ac00"
+                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/1dc4959014d3e7304bd87c58bcf96cf3fc63ac00",
-                "reference": "1dc4959014d3e7304bd87c58bcf96cf3fc63ac00",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c602e2451c5cf3873c4e7eddda3d912c9bd24629",
+                "reference": "c602e2451c5cf3873c4e7eddda3d912c9bd24629",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0",
+                "php": "^7.1",
+                "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
+                "http-interop/http-factory-tests": "^0.5.0",
                 "php-http/psr7-integration-tests": "dev-master",
-                "phpunit/phpunit": "^5.7.16 || ^6.0.8 || ^7.2.7",
-                "zendframework/zend-coding-standard": "~1.0"
+                "phpunit/phpunit": "^7.0.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev",
                     "dev-release-1.8": "1.8.x-dev"
                 }
             },
@@ -857,16 +1004,15 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "BSD-3-Clause"
             ],
             "description": "PSR HTTP Message implementations",
-            "homepage": "https://github.com/zendframework/zend-diactoros",
             "keywords": [
                 "http",
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-09-27T19:45:25+00:00"
+            "time": "2019-01-05T20:22:53+00:00"
         }
     ],
     "packages-dev": [
@@ -876,12 +1022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "e66888c99c97b85113822b9f37276c2f9c414c97"
+                "reference": "f8cecdf1476baf781b0e1b4552334ce730e5820f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/e66888c99c97b85113822b9f37276c2f9c414c97",
-                "reference": "e66888c99c97b85113822b9f37276c2f9c414c97",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/f8cecdf1476baf781b0e1b4552334ce730e5820f",
+                "reference": "f8cecdf1476baf781b0e1b4552334ce730e5820f",
                 "shasum": ""
             },
             "require": {
@@ -889,8 +1035,8 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.5|~5",
-                "symfony/phpunit-bridge": "~2.7|~3",
-                "symfony/yaml": "~2.3|~3"
+                "symfony/phpunit-bridge": "~2.7|~3|~4",
+                "symfony/yaml": "~2.3|~3|~4"
             },
             "suggest": {
                 "symfony/yaml": "If you want to parse features, represented in YAML files"
@@ -927,7 +1073,7 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2017-11-27T08:33:48+00:00"
+            "time": "2019-01-16T14:39:44+00:00"
         },
         {
             "name": "codeception/base",
@@ -1963,12 +2109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6e6fb0c091539efb0289490dbf2b4a073bb043ec"
+                "reference": "706c004625b4b3e69f5e9718fac8157f6f5a8bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e6fb0c091539efb0289490dbf2b4a073bb043ec",
-                "reference": "6e6fb0c091539efb0289490dbf2b4a073bb043ec",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/706c004625b4b3e69f5e9718fac8157f6f5a8bed",
+                "reference": "706c004625b4b3e69f5e9718fac8157f6f5a8bed",
                 "shasum": ""
             },
             "require": {
@@ -2039,7 +2185,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-01-02T16:21:38+00:00"
+            "time": "2019-01-17T11:26:01+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2705,12 +2851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "390bffe2265aac8184fdf86400c0d0841e65bc4b"
+                "reference": "3944212d24b3d3a2580aea955a4c203ff9d24842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/390bffe2265aac8184fdf86400c0d0841e65bc4b",
-                "reference": "390bffe2265aac8184fdf86400c0d0841e65bc4b",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/3944212d24b3d3a2580aea955a4c203ff9d24842",
+                "reference": "3944212d24b3d3a2580aea955a4c203ff9d24842",
                 "shasum": ""
             },
             "require": {
@@ -2748,7 +2894,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-12-21T04:12:30+00:00"
+            "time": "2019-01-17T22:20:47+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -2756,12 +2902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "b3f9934999d736b9cbbf5f10cc009b10ac68c1d2"
+                "reference": "8af9e6325037b9e1f78c1c5174603b3facf4ec15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/b3f9934999d736b9cbbf5f10cc009b10ac68c1d2",
-                "reference": "b3f9934999d736b9cbbf5f10cc009b10ac68c1d2",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/8af9e6325037b9e1f78c1c5174603b3facf4ec15",
+                "reference": "8af9e6325037b9e1f78c1c5174603b3facf4ec15",
                 "shasum": ""
             },
             "require": {
@@ -2805,7 +2951,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T22:37:52+00:00"
         },
         {
             "name": "symfony/console",
@@ -2813,12 +2959,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d4967c85500c52b01b3fa42ae81ab2ab00b9c10d"
+                "reference": "d78ff9239213a6349455d08325ae2ca9b57f25c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d4967c85500c52b01b3fa42ae81ab2ab00b9c10d",
-                "reference": "d4967c85500c52b01b3fa42ae81ab2ab00b9c10d",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d78ff9239213a6349455d08325ae2ca9b57f25c9",
+                "reference": "d78ff9239213a6349455d08325ae2ca9b57f25c9",
                 "shasum": ""
             },
             "require": {
@@ -2830,6 +2976,9 @@
                 "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
             },
+            "provide": {
+                "psr/log-implementation": "1.0"
+            },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.4|~4.0",
@@ -2839,7 +2988,7 @@
                 "symfony/process": "~3.4|~4.0"
             },
             "suggest": {
-                "psr/log-implementation": "For using the console logger",
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
                 "symfony/lock": "",
                 "symfony/process": ""
@@ -2874,7 +3023,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-04T15:14:53+00:00"
+            "time": "2019-01-16T21:53:45+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -2950,12 +3099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "cf1c211f4c34d9a33475a88dcf39a7aa0e295e4c"
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/cf1c211f4c34d9a33475a88dcf39a7aa0e295e4c",
-                "reference": "cf1c211f4c34d9a33475a88dcf39a7aa0e295e4c",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/105c98bb0c5d8635bea056135304bd8edcc42b4d",
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d",
                 "shasum": ""
             },
             "require": {
@@ -2995,7 +3144,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T21:53:39+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -3003,12 +3152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "de43e707a91b9459321f01d47dc13739f122eca6"
+                "reference": "66b39ee8dfeb348d8eb13004ab3f0bdf3020be34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/de43e707a91b9459321f01d47dc13739f122eca6",
-                "reference": "de43e707a91b9459321f01d47dc13739f122eca6",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/66b39ee8dfeb348d8eb13004ab3f0bdf3020be34",
+                "reference": "66b39ee8dfeb348d8eb13004ab3f0bdf3020be34",
                 "shasum": ""
             },
             "require": {
@@ -3052,7 +3201,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T21:53:45+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3060,12 +3209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "249a31f94a62ac1f12926cd8d6dd37f22cc695cd"
+                "reference": "63dd1cfa74bff0c8ae596fb90a3a4511bd5cb84b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/249a31f94a62ac1f12926cd8d6dd37f22cc695cd",
-                "reference": "249a31f94a62ac1f12926cd8d6dd37f22cc695cd",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/63dd1cfa74bff0c8ae596fb90a3a4511bd5cb84b",
+                "reference": "63dd1cfa74bff0c8ae596fb90a3a4511bd5cb84b",
                 "shasum": ""
             },
             "require": {
@@ -3116,7 +3265,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T21:53:45+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3124,12 +3273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "462d940115bc98dd81da28daf87ca7eaa8ce0552"
+                "reference": "7f64183e3ee0cda0644f31ed8f37f01e800af5e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/462d940115bc98dd81da28daf87ca7eaa8ce0552",
-                "reference": "462d940115bc98dd81da28daf87ca7eaa8ce0552",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/7f64183e3ee0cda0644f31ed8f37f01e800af5e8",
+                "reference": "7f64183e3ee0cda0644f31ed8f37f01e800af5e8",
                 "shasum": ""
             },
             "require": {
@@ -3165,7 +3314,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T21:53:39+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -3290,12 +3439,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "6e8c0d1188d5ba60752b8b523db1f1bdbac203da"
+                "reference": "4c7b2f8f8492da1729aef4c516447716d2987fe6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/6e8c0d1188d5ba60752b8b523db1f1bdbac203da",
-                "reference": "6e8c0d1188d5ba60752b8b523db1f1bdbac203da",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/4c7b2f8f8492da1729aef4c516447716d2987fe6",
+                "reference": "4c7b2f8f8492da1729aef4c516447716d2987fe6",
                 "shasum": ""
             },
             "require": {
@@ -3341,7 +3490,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-03T09:16:58+00:00"
+            "time": "2019-01-16T21:53:39+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -3593,12 +3742,13 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "charlesportwoodii/yii2-psr7-bridge": 20
+        "charlesportwoodii/yii2-psr7-bridge": 20,
+        "spiral/dumper": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=7.2.0"
     },
     "platform-dev": []
 }
