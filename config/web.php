@@ -24,15 +24,6 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'session' => [
-            'class' => 'yii\web\CacheSession',
-            'cache' => 'cache',
-            'name' => 'app',
-            'cookieParams' => [
-                'httpOnly' => true,
-                'secure' => true
-            ]
-        ],
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => false,

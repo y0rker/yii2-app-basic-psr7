@@ -173,12 +173,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/charlesportwoodii/yii2-psr7-bridge.git",
-                "reference": "d38426733c113759fa5460b87846981afbd45466"
+                "reference": "620f3839cad4409f57a23c3768ff828b4b156acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/charlesportwoodii/yii2-psr7-bridge/zipball/d38426733c113759fa5460b87846981afbd45466",
-                "reference": "d38426733c113759fa5460b87846981afbd45466",
+                "url": "https://api.github.com/repos/charlesportwoodii/yii2-psr7-bridge/zipball/620f3839cad4409f57a23c3768ff828b4b156acd",
+                "reference": "620f3839cad4409f57a23c3768ff828b4b156acd",
                 "shasum": ""
             },
             "require": {
@@ -211,7 +211,7 @@
                 }
             ],
             "description": "A PSR7 Bridge for Yii2",
-            "time": "2019-01-17T22:22:10+00:00"
+            "time": "2019-01-18T20:54:14+00:00"
         },
         {
             "name": "codedungeon/php-cli-colors",
@@ -690,12 +690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "c20f77f94d70a6b43d8699139eb8940257d5c93e"
+                "reference": "049583f8244b95f6d45e2c6da8f220a42d401f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c20f77f94d70a6b43d8699139eb8940257d5c93e",
-                "reference": "c20f77f94d70a6b43d8699139eb8940257d5c93e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/049583f8244b95f6d45e2c6da8f220a42d401f50",
+                "reference": "049583f8244b95f6d45e2c6da8f220a42d401f50",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-15T10:42:13+00:00"
+            "time": "2019-01-18T11:06:08+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2851,12 +2851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "3944212d24b3d3a2580aea955a4c203ff9d24842"
+                "reference": "cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/3944212d24b3d3a2580aea955a4c203ff9d24842",
-                "reference": "3944212d24b3d3a2580aea955a4c203ff9d24842",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d",
+                "reference": "cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d",
                 "shasum": ""
             },
             "require": {
@@ -2894,7 +2894,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-01-17T22:20:47+00:00"
+            "time": "2019-01-18T05:24:17+00:00"
         },
         {
             "name": "symfony/browser-kit",

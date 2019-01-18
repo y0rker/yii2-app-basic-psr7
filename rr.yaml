@@ -8,7 +8,7 @@ http:
   workers:
     command: "php ./roadrunner"
     pool:
-      numWorkers: 4
+      numWorkers: 1
       maxJobs: 0
       allocateTimeout: 15
 static:
