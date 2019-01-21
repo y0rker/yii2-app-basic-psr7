@@ -17,6 +17,10 @@ $application = (new \yii\Psr7\web\Application($config));
 // Handle each HTTP request from RoadRunner
 while ($request = $psr7->acceptRequest()) {
     try {
+        // Without a PSR-15 dispatcher
+        // $response = $application->handle($request);
+
+        // With a PSR-15 dispatcher
         $response = \Ajgarlag\Psr15\Dispatcher\Pipe::create([
             new \Middlewares\Uuid,
             new \Middlewares\ResponseTime

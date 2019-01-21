@@ -221,12 +221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/charlesportwoodii/yii2-psr7-bridge.git",
-                "reference": "5e675670106c7bc0f40a79a99ad8d91cda0890f1"
+                "reference": "1c5aea3b5059f1fb58603f4edd5be03b1b9027ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/charlesportwoodii/yii2-psr7-bridge/zipball/5e675670106c7bc0f40a79a99ad8d91cda0890f1",
-                "reference": "5e675670106c7bc0f40a79a99ad8d91cda0890f1",
+                "url": "https://api.github.com/repos/charlesportwoodii/yii2-psr7-bridge/zipball/1c5aea3b5059f1fb58603f4edd5be03b1b9027ab",
+                "reference": "1c5aea3b5059f1fb58603f4edd5be03b1b9027ab",
                 "shasum": ""
             },
             "require": {
@@ -259,7 +259,7 @@
                 }
             ],
             "description": "A PSR7 Bridge for Yii2",
-            "time": "2019-01-21T19:54:10+00:00"
+            "time": "2019-01-21T20:07:06+00:00"
         },
         {
             "name": "codedungeon/php-cli-colors",
