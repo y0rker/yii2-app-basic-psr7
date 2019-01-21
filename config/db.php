@@ -2,13 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '',
-    'charset' => 'utf8',
-
-    // Schema cache options (for production environment)
-    //'enableSchemaCache' => true,
-    //'schemaCacheDuration' => 60,
-    //'schemaCache' => 'cache',
+    'dsn' => 'sqlite:/' . __DIR__ . '/../runtime/db.sqlite',
+    'charset'               => 'utf8',
+    'enableSchemaCache'     => !YII_DEBUG,
+    'schemaCacheDuration'   => YII_DEBUG ? 0 : 86400,
+    'schemaCache'           => 'cache'
 ];

@@ -690,12 +690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "049583f8244b95f6d45e2c6da8f220a42d401f50"
+                "reference": "6b304c949c9093c9106d8612166d4ae40412135e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/049583f8244b95f6d45e2c6da8f220a42d401f50",
-                "reference": "049583f8244b95f6d45e2c6da8f220a42d401f50",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6b304c949c9093c9106d8612166d4ae40412135e",
+                "reference": "6b304c949c9093c9106d8612166d4ae40412135e",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-18T11:06:08+00:00"
+            "time": "2019-01-21T12:21:47+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2851,12 +2851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d"
+                "reference": "2cefc201275e580a3f5f4cf0d3a80f6ab00cd39b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d",
-                "reference": "cbe9b4ed5f2b73e6cb6a9adea3e745f9f8f9286d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/2cefc201275e580a3f5f4cf0d3a80f6ab00cd39b",
+                "reference": "2cefc201275e580a3f5f4cf0d3a80f6ab00cd39b",
                 "shasum": ""
             },
             "require": {
@@ -2894,7 +2894,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-01-18T05:24:17+00:00"
+            "time": "2019-01-21T04:47:35+00:00"
         },
         {
             "name": "symfony/browser-kit",
