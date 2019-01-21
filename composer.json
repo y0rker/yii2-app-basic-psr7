@@ -20,7 +20,10 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "spiral/roadrunner": "^1.3",
         "charlesportwoodii/yii2-psr7-bridge": "dev-master",
-        "spiral/dumper": "dev-master"
+        "spiral/dumper": "dev-master",
+        "middlewares/uuid": "dev-master",
+        "middlewares/response-time": "dev-master",
+        "ajgarlag/psr15-dispatcher": "^0.2.0@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
