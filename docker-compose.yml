@@ -1,13 +1,13 @@
 version: "3.6"
 services:
   php:
-    image: charlesportwoodii/php:7.2
+    image: charlesportwoodii/php:7.3
     working_dir: /var/www
     ports:
       - "8080:8080"
     volumes:
       - ${PWD-.}:/var/www
-    entrypoint: bash -lc "/var/www/rr serve -d -v -c ./rr.yaml"
+    entrypoint: bash -lc "./yii migrate/up; /var/www/rr serve -d -v -c ./rr.yaml"
     networks:
       main:
         aliases:
