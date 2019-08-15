@@ -2,12 +2,12 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <h1 align="center">Yii 2 RoadRunner-ready basic application template</h1>
     <br>
 </p>
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+Yii 2 RoadRunner-ready Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+rapidly creating small projects that is to be run with [RoadRunner](https://roadrunner.dev/).
 
 The template contains the basic features including user login/logout and a contact page.
 It includes all commonly used configurations that would allow you to focus on adding new
@@ -54,11 +54,16 @@ You can then install this project template using the following command:
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
+[Get RoadRunner](https://roadrunner.dev/). Then execute:
+
+```
+./rr.exe serve -d -v -c ./rr.yaml
+```
+
+Now you should be able to access the application through the following URL:
 
 ~~~
-http://localhost/basic/web/
+http://localhost:8080/
 ~~~
 
 ### Install from an Archive File
@@ -75,10 +80,16 @@ Set cookie validation key in `config/web.php` file to some random secret string:
 ],
 ```
 
-You can then access the application through the following URL:
+[Get RoadRunner](https://roadrunner.dev/). Then execute:
+
+```
+./rr.exe serve -d -v -c ./rr.yaml
+```
+
+Now you should be able to access the application through the following URL:
 
 ~~~
-http://localhost/basic/web/
+http://localhost:8080/
 ~~~
 
 
